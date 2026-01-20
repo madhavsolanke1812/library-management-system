@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     AWS_REGION: ap-south-1
-    REPOSITORY_URI: 339713037827.dkr.ecr.ap-south-1.amazonaws.com/librarymanagement-registry
+    REPOSITORY_URI: 881601364561.dkr.ecr.ap-south-1.amazonaws.com/librarymanagement-registry
 
 phases:
   install:
