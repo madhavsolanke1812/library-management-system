@@ -1,5 +1,5 @@
 # Use the Official OpenJDK 17 image from Docker Hub
-FROM eclipse-temurin:17-jre
+FROM public.ecr.aws/amazoncorretto/amazoncorretto:17-al2
 # Set working directory inside the container
 WORKDIR /app
 # Copy the compiled Java application JAR file into the container (ECS)
