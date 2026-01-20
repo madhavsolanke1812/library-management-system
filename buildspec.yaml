@@ -5,7 +5,12 @@ env:
     AWS_REGION: ap-south-1
     REPOSITORY_URI: 339713037827.dkr.ecr.ap-south-1.amazonaws.com/librarymanagement-registry
 
-
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+    commands:
+      - echo Install phase started
 
   pre_build:
     commands:
