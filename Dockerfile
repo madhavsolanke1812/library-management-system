@@ -9,6 +9,7 @@ EXPOSE 8080
 # Command to run the application
 CMD ["java", "-jar", "library-management-system.jar"]
 
+
 #                   by all above instructions the docker image is created
 #                   and this docker image is created by AWS CodeBuild and push image to ECR
 #                   but how does AWS Code Build knows this instruction ?
