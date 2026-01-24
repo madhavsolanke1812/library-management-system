@@ -8,9 +8,14 @@
         <version>3.5.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.booktrack</groupId>
     <artifactId>library-management-system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+    <!-- ✅ THIS IS THE ONLY VALID PLACE -->
+    <packaging>jar</packaging>
+
     <name>library-management-system</name>
     <description>library-management-system</description>
     <url/>
@@ -93,6 +98,7 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -105,6 +111,18 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <!--            <plugin>-->
+            <!--                <groupId>org.springframework.boot</groupId>-->
+            <!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--                <configuration>-->
+            <!--                    <excludes>-->
+            <!--                        <exclude>-->
+            <!--                            <groupId>org.projectlombok</groupId>-->
+            <!--                            <artifactId>lombok</artifactId>-->
+            <!--                        </exclude>-->
+            <!--                    </excludes>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
         </plugins>
     </build>
 

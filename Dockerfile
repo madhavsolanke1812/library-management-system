@@ -7,7 +7,8 @@ COPY target/library-management-system-0.0.1-SNAPSHOT.jar app.jar
 # Expose the port the Spring Boot application will run on
 EXPOSE 8080
 # Command to run the application
-CMD ["java", "-jar", "library-management-system.jar"]
+# CMD ["java", "-jar", "library-management-system.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]
 
 
 #                   by all above instructions the docker image is created
