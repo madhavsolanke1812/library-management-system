@@ -20,7 +20,8 @@ public class OverDueScheduler {
     @Transactional
     public void flagOverDue() {
         List<BorrowRecord> overdue = borrowRecordRepository.findOverdueRecords(LocalDate.now());
-        overdue.forEach(r -> {
+        overdue.forEach(r ->
+        {
             if (!r.isOverDueFlag()) {
                 r.setOverDueFlag(true);
             }
